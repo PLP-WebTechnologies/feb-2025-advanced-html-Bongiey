@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML ELEMENTS</title>
+  </head>
+  <body>
+    <!--Ordered list with Roman numerals-->
+    <section>
+      <h2>Roman Numerals list</h2>
+      <ol type="I">
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+    </section>
+
+    <!--External Image from Pixel-->
+    <section>
+      <h2>Architectural Curves</h2>
+      <img
+        src="https://images.pexels.com/photos/31500951/pexels-photo-31500951/free-photo-of-abstract-black-and-white-architectural-curves.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        alt="Landscape"
+        width="600"
+        height="400"
+      />
+    </section>
+
+    <!--Contact Table-->
+    <section>
+      <h2>Contact List</h2>
+      <table boarder="1" cellpadding="8">
+        <thead>
+          <tr>
+            <th>NAME</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Puseletso</td>
+            <td>3896 Tshepiso Ext1</td>
+            <td>084 235 2810</td>
+            <td>puseletsokeswaa@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Moeketsi</td>
+            <td>5548 Bophelong Ext17</td>
+            <td>071 202 6187</td>
+            <td>keswamoektsi5@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Tlaleng</td>
+            <td>35 Oak street</td>
+            <td>083 272 6732</td>
+            <td>keswatlaleng56@gmail.com</td>
+          </tr>
+          <tr>
+            <td>BONGS</td>
+            <td>123 Muvhango Ext12</td>
+            <td>061 610 1017</td>
+            <td>keswatlaleng00@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Teboho</td>
+            <td>321 Vnderbijlpark</td>
+            <td>081 202 4321</td>
+            <td>TebohoSamuel@gmail.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Registration form-->>
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="POST">
+        <!--Name-->
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        /><br /><br />
+
+        <!--Email-->
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        /><br /><br />
+
+        <!--Password-->
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Create a Password"
+          minlength="6"
+          required
+        /><br /><br />
+
+        <!--Date-->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br /><br />
+
+        <!--Dropdown-->
+        <label for="country"> Select your Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Choose--</option>
+          <option value="za">South Africa</option>
+          <option value="ng">Nigeria</option>
+          <option value="ke">Kenya</option>
+          <option value="gh">Ghana</option></select
+        ><br /><br />
+
+        <!--Radio buttons-->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name=" gender" value="female" />
+        <label for="female">Female</label><br /><br />
+
+        <!--Checkboxes-->
+        <p>Interests</p>
+        <input type="checkbox" id="coding" name="interests" value="coding" />
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music" name="interests" value="music" />
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports" name="interests" value="sports" />
+        <label for="sport">Sports</label>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <!--Multimedia Elements-->
+    <section>
+      <h2>Audio and Video</h2>
+
+      <!--Audio-->
+      <audio controls>
+        <source
+          src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+          type="audio/mpeg"
+        />
+        Your browser does not support the audio element.</audio
+      ><br /><br />
+
+      <!--Video-->
+      <video width="600" controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag
+      </video>
+    </section>
+  </body>
+</html>
